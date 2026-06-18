@@ -1,0 +1,35 @@
+{
+  "name": "playwright-evaluation",
+  "version": "1.0.0",
+  "description": "playwright-evaluation",
+  "main": "index.js",
+  "scripts": {
+    "smoke": "playwright test --grep @smoke",
+    "regression": "playwright test",
+    "allure:generate": "allure generate ./allure-results --clean",
+    "allure:open": "allure open",
+    "report": "playwright show-report",
+    "ci": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breddy94/playwright-evaluation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/breddy94/playwright-evaluation/issues"
+  },
+  "homepage": "https://github.com/breddy94/playwright-evaluation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3",
+    "allure-playwright": "^3.10.0",
+    "dotenv": "^17.4.2"
+  },
+  "dependencies": {
+    "allure": "^3.11.0"
+  }
+}
